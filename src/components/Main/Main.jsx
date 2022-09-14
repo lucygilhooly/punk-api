@@ -1,12 +1,13 @@
 import React from 'react'
 import './Main.scss'
 import CardList from './CardList/CardList'
-import beer from '../../data/beers'
+import beers from '../../data/beers'
+
 
 const Main = () => {
     return (
       <div >
-      <CardList  beersArr={beer} />
+      <CardList  beersArr={beers} />
      </div>
   )
 }
