@@ -2,27 +2,14 @@ import React from 'react'
 import './NavBar.scss'
 import SearchBox from './SearchBox/SearchBox'
 import FlitersList from './FiltersList/FlitersList'
-import { useState } from 'react'
 
-const NavBar = ({beersArr}) => {
-  const [searchTerm, setSearchTerm] = useState("");
-
-  const handleInput = (event) => {
-    const lowerInput = event.target.value.toLowerCase();
-    setSearchTerm(lowerInput);
-  };
-
-  const beerResult = beersArr.filter((beer) => {
-    const beerNameLower = beer.name.toLowerCase();
-
-    return beerNameLower.includes(searchTerm) && beer.image_url;
-  });
+const NavBar = ({getSearchBoxValue}) => {
+  
   return (
     <div className='navBar'>
-      <SearchBox label={"Beers "}
-        searchTerm={searchTerm}
-        handleInput={handleInput} />
-      <FlitersList />
+      <h3>Search for your favourite Beers here:</h3>
+      <SearchBox getSearchBoxValue={getSearchBoxValue} />
+      {/* <FlitersList /> */}
     </div>
   )
 }

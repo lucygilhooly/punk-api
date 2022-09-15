@@ -1,7 +1,12 @@
 .beer {
-  border: 2px solid black;
+  border: 2px solid #888888;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  box-shadow: 5px 10px #888888;
+}
+.beer__image {
+  height: 25vh;
 }

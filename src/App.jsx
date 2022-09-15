@@ -1,34 +1,27 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './App.scss';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Main from './components/Main/Main';
-// import beers from '../src/data/beers.js'
 import NavBar from './components/NavBar/NavBar';
+import Header from './components/Header/Header';
 
 function App() {
-  const [beers, setBeers] = useState([]);
+const [searchTerm, setSearchTerm] = useState(" ")
 
-  useEffect(() => {
-    console.log('useEffect')
-   getBeers()
-  },[])
-
-  const getBeers = async() => {
-    const url = `https://api.punkapi.com/v2/beers`;
-    const res = await fetch(url);
-    const data = await res.json();
-    setBeers(data.results)
-    console.log(data)
-  }
-
-
+const getSearchBoxValue = (event) => {
+  const lowerSearchTerm = event.target.value.toLowerCase()
+  setSearchTerm(lowerSearchTerm)
+}
   return (
-    <div className="app">
-      <h1>Punk API</h1>
-      {/* <NavBar /> */}
-      <Main beersArr={beers}/>
-      
+    <>
+    <div className='header'>
+      <Header />
     </div>
+    <div className="app">
+      <NavBar getSearchBoxValue={getSearchBoxValue}/>
+      <Main searchTerm={searchTerm}/>
+    </div>
+    </>
   );
 }
 

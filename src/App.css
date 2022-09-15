@@ -1,6 +1,6 @@
 .app {
-  background-color: aquamarine;
-  height: 100vh;
+  background-color: whitesmoke;
+  height: 100%;
   display: grid;
   grid-template-columns: 1fr 3fr;
 }

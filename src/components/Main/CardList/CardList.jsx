@@ -2,11 +2,11 @@ import React from 'react'
 import './CardList.scss'
 import Card from './Card/Card'
 
-const CardList = ({beersArr}) => {
-  const beersJSX = beersArr.map((beer, index) => {
+const CardList = ({beers}) => {
+  const beersJSX = beers.map((beer, index) => {
     return (
       <div key={index}>
-      <Card  name={beer.name} tagline={beer.tagline} percentage={beer.abv} image={beer.image_url} />
+      <Card name={beer.name} tagline={beer.tagline} percentage={beer.abv} image={beer.image_url} />
     </div>
   )
 })

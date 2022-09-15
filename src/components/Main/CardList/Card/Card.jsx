@@ -3,7 +3,6 @@ import './Card.scss'
 
 
 const Card = ({ name, tagline, percentage, image }) => {
-
   
   return (
     <div className='beer'>
@@ -15,11 +14,3 @@ const Card = ({ name, tagline, percentage, image }) => {
 }
 
 export default Card
-
-
-
-// 'name'
-// 'tagline'
-// 'description'
-// 'image_url'
-// 'abv'
