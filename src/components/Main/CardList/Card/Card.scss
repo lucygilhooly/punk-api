@@ -1,3 +1,6 @@
+@use '../../../../assets/sass/variables.scss' as *;
+
+
 .beer {
     border: none;
     border-radius: 8px;
@@ -32,5 +35,5 @@
 }
 
 .beer:hover{
-    background-color: rgb(201, 219, 241);
+    background-color: $colour-four;
 }
