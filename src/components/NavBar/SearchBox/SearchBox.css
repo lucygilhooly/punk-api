@@ -1,6 +1,8 @@
 .search-box__input {
+  border: none;
   width: 90%;
-  height: 20px;
+  height: 50px;
+  border-radius: 15px;
 }
 
 .search-box__input:hover, .search-box__input:focus {

@@ -25,11 +25,11 @@ const Main = ({searchTerm}) => {
   }
  
     return (
-      <>
+      <section className='main'>
         <div className='main__beers'>
           <CardList beers={filterBeers(beers, searchTerm)}/>
         </div>
-     </>
+     </section>
   )
 
     }

@@ -7,7 +7,7 @@ const SearchBox = ({getSearchBoxValue}) => {
       <input
         type="text"
         onChange={getSearchBoxValue}
-        placeholder="Search for beer here!"
+        placeholder="   🔍"
         className="search-box__input"
       />
   )
