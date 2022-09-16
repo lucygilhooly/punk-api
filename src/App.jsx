@@ -13,15 +13,15 @@ const getSearchBoxValue = (event) => {
   setSearchTerm(lowerSearchTerm)
 }
   return (
-    <>
-    <div className='header'>
+    <section className='app'>
+    <div className='app__header'>
       <Header />
     </div>
-    <div className="app">
+    <div className="app__body">
       <NavBar getSearchBoxValue={getSearchBoxValue}/>
       <Main searchTerm={searchTerm}/>
     </div>
-    </>
+    </section>
   );
 }
 

@@ -7,7 +7,7 @@ const NavBar = ({getSearchBoxValue}) => {
   
   return (
     <div className='navBar'>
-      <h3>Search for your favourite Beers here:</h3>
+      <h3>Search Your Favourite Beers:</h3>
       <SearchBox getSearchBoxValue={getSearchBoxValue} />
       {/* <FlitersList /> */}
     </div>

@@ -1,8 +1,17 @@
+@use '../../assets/sass/variables.scss' as *;
+
 .header{
   display: flex;
   justify-content: center;
-  color: blue;
-  background-color:whitesmoke;
+  flex-direction: column;
+  align-items: center;
+  color: $colour-three;
+  background-color:$colour-two;
   padding: 10px;
-  
+  margin:10px;
+
+  &__logo{
+    height: 90px;
+    width:90px;
+  }
 }
