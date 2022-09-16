@@ -1,12 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 .header {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  color: black;
   background-color: white;
   padding: 10px;
   margin: 10px;
+  font-family: "Roboto";
+}
+.header__title {
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 15px;
+  color: #c9dbf1;
+  text-shadow: 3px 3px black;
 }
 .header__logo {
   height: 90px;

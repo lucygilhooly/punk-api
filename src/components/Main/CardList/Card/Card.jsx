@@ -9,8 +9,8 @@ const Card = ({ name, tagline, percentage, image }) => {
       <img className='beer__image' src={image} alt={name}></img>
       <h1 className='beer__name'>{name}</h1>
       <div className='beer__info'>
-      <p> • {tagline} • </p>
-      <p> • {percentage}% • </p>
+      <p className='beer__info--tag'> • {tagline} • </p>
+      <p className='beer__info--percentage'> • {percentage}% • </p>
       </div>
     </div>
   )
